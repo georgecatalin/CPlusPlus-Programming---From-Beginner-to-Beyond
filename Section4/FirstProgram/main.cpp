@@ -9,4 +9,6 @@ int main()
     std::cin>>favorite_number;
     
     std::cout<<"Fantastic, this is the same number as mine!"<<std::endl;
+    
+    return 0;
 }
