@@ -40,6 +40,11 @@ int main()
     cout<<endl;
     cout<<"The value of the array is the memory address of the location where the array starts from: "<<my_array<<endl;
     
+    int multidimensional_array [3] [4] { 
+        {100,99,98,97},
+        {110,102,99,99},
+    {32,33,55,232}};
+    
     
     return 0;
 }
