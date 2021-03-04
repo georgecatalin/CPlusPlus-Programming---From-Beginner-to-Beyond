@@ -1,5 +1,6 @@
 # Beginning C++ Programming - From Beginner to Beyond
-Get familiar with Modern C++ Object-Oriented Programming (OOP), STL skills and the workflow used when developing applications with C++. 
+## Scope
+* Get familiar with Modern C++ Object-Oriented Programming (OOP), STL skills and the workflow used when developing applications with C++. 
 
 Code practice associated to the content of the Udemy.com course: 
 * https://www.udemy.com/course/beginning-c-plus-plus-programming/
