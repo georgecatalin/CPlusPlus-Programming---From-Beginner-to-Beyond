@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="Section10_CharactersAndStrings" Database="" Version="10000">
-  <Project Name="WorkingWithCStyleStrings" Path="WorkingWithCStyleStrings/WorkingWithCStyleStrings.project" Active="Yes"/>
+  <Project Name="WorkingWithCStyleStrings" Path="WorkingWithCStyleStrings/WorkingWithCStyleStrings.project" Active="No"/>
+  <Project Name="WorkingWithCPPStrings" Path="WorkingWithCPPStrings/WorkingWithCPPStrings.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
       <Project Name="WorkingWithCStyleStrings" ConfigName="Debug"/>
+      <Project Name="WorkingWithCPPStrings" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
       <Project Name="WorkingWithCStyleStrings" ConfigName="Release"/>
+      <Project Name="WorkingWithCPPStrings" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
