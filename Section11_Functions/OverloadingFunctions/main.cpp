@@ -58,8 +58,5 @@ int main()
     vector<string> cars {"Dacia","Renault","Lada"};
     print(cars); //5th overload is called
     
-    
-    
-    
     return 0;
 }
