@@ -44,12 +44,12 @@ int main()
     
     int another_number {20};
     cout<<"The value of another_number before appealing the function 'pass_by_value_1' is "<<another_number<<endl;
-    pass_by_value_1(num); //a copy of the value is passed to the function, with a different address in memory , not the actual variable
+    pass_by_value_1(another_number); //a copy of the value is passed to the function, with a different address in memory , not the actual variable
     cout<<"The value of another_number after appealing the function 'pass_by_value_1' is "<<another_number<<endl;
     
     string name{"George"};
     cout<<"The value of name before appealing the function 'pass_by_value_2' is "<<name<<endl;
-    pass_by_value_1(num); //a copy of the value is passed to the function, with a different address in memory , not the actual variable
+    pass_by_value_2(name); //a copy of the value is passed to the function, with a different address in memory , not the actual variable
     cout<<"The value of name after appealing the function 'pass_by_value_2' is "<<name<<endl;
     
     vector<string> squad {"Cornel","Ionut", "Alexey"};

@@ -1,5 +1,6 @@
 #include <iostream>
 
+
 using namespace std;
 
 void print_array(const int array[],size_t size); //set it to const so to not to be able to modify the array since we pass the array name which is the memory address of the first element of the array
