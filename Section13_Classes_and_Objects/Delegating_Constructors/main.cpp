@@ -3,7 +3,7 @@
 
 using namespace std;
 
-class Player()
+class Player
 {
     //attribuytes
 private:
@@ -13,7 +13,7 @@ private:
     
     //methods
     //Delegating Constructors
-    
+public:
     Player();
     Player(string name_val);
     Player(string name_val, int health_val, int xp_val);
@@ -34,7 +34,7 @@ Player::Player(string name_val)
     }
 
 Player::Player(string name_val,int health_val, int xp_val)
-    : Player{name_val, health_val,xp_val}
+    : name{name_val},health{health_val},xp{xp_val}
     {
         cout<<"Three-args constructor appealed here."<<endl;
     }
