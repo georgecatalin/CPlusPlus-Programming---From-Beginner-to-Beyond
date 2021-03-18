@@ -43,7 +43,7 @@ Player::Player(string name_val, int health_val, int xp_val)
 
 Player:: ~Player()
 {
-    
+    cout<<"Object destructor called now."<<endl;
 }
 
 int main()
