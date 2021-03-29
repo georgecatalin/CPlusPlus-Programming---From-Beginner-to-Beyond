@@ -41,6 +41,10 @@ int main()
     {
         std::cerr<<ex<<std::endl;
     }
+    catch(...)
+    {
+        //this block catches all remaining exceptions
+    }
     
     std::cout<<"Program ends here.Bye!"<<std::endl;
     
