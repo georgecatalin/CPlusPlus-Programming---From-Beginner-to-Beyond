@@ -50,10 +50,6 @@ int main()
    std::cout<<"Enter the liters:";
    std::cin>>liters;
    
-  
-   
-   
-   
    try
    {
        if(liters==0)
