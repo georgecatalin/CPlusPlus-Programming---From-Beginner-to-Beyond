@@ -29,7 +29,7 @@ int main()
         kilometers_per_liters=return_average(kilometers,liters);
         std::cout<<"Result: "<<kilometers_per_liters<<std::endl;
     }
-    catch
+    catch(int &ex)
     {
         std::cerr<<"Warning,bro!! You are trying division by zero."<<std::endl;
     }
