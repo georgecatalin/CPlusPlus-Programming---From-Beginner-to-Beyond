@@ -1,0 +1,146 @@
+//READING FROM A TEXT FILE
+
+
+
+Input files (fstream and ifstream)
+
+fstream and ifstream are commonly used for input files
+
+There are a few steps that have to be followed when working with input files:
+- add #include <stream>
+- declare an fstream or ifstream object
+- connect the object to the file on the filesystem (filesystems are different, this opens the file for reading)
+- read the data from the file via the stream
+- close the stream
+
+How to open an fstream object (fstream objects can support both reading and writing modes)
+
+//open an fstream object in text mode
+std::fstream in_file {"../mytext.txt", std::ios::in} ;
+
+//open an fstream object in binary mode
+std::fstream in_file{"../myfile.txt", std::ios::in | std::ios::binary};
+
+How to open an ifstream object (ifstream objects can be used only for read modes)
+
+//open an ifstream object for text
+std::ifstream in_file {"../mytext.txt", std::io::in};
+or
+std::ifstream in_file {"../mytext.txt"}
+
+//open an ifstream object for binary
+std::ifstream in_file {"../mytext.txt", std::io::binary}
+
+//open a file for reading without knowing its name in the beginning
+
+std::ifstream in_file;
+std::string filename;
+cin>>filename;
+
+in_file.open(filename);
+or
+in_file.open(filename, std::ios::binary);
+
+//check if the file was successfully open
+if (in_file.is_open())
+{
+    //read from it
+}
+else
+{
+    //file could not be opened
+    //does the file exist?
+    //should the program terminate?
+}
+
+or
+
+if(in_text)
+{
+    //read from file
+}
+else
+{
+    //file could not be opened
+    //file does not exist
+    //program should terminate ??
+}
+
+//close the file : always close the file to flush any unwritten data
+
+in_file.close();
+
+
+//Reading from file using the stream extraction operator >>
+
+int num{}
+double total{}
+std::string name{}
+
+in_file>>num;
+in_file>>total>>name;
+
+//Reading from files using getline to read a single line at a time
+
+std::string line{}
+
+std::getline(in_line, line);
+
+//reading the text  one line at a time in loop
+
+std::ifstream in_file{"../mytext.txt"} ;
+std::string line{}
+
+if(!in_file) //verify if the object is initialized so no error
+{
+    std::cerr<<"File open error"<<std::endl;
+    return 1'//exit main()
+}
+
+while(!in_file.eof())
+{
+    std::getline(in_line, line);
+    std::cout<<line<<std::endl;
+    
+}
+
+in_file.close();
+
+or
+
+std::ifstream in_file {"../mytext.txt"};
+std::string line {} ;
+
+if(!in_file)
+{
+    std::cerr<<"Error when opening the file"<<std::endl;
+    return 1;
+}
+
+while(std::getline(in_file,line))
+{
+    std::cout<<line<<std::endln;
+}
+
+in_file.close();
+
+or
+
+
+//reading from a file , one character at a time
+
+std::ifstream in_file{ "../mytext.txt" } ;
+char c;
+
+if(!in_file)
+{
+    std::cerr<<"Error when opening the file."<<std::endl;
+}
+
+while(in_file.get(c))
+{
+    cout<<c;
+}
+
+in_file.close();
+
